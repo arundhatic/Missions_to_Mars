@@ -1,0 +1,83 @@
+
+
+        h1 {
+            color: navy;
+            font-size: 45px;
+            font-weight: bold;
+            /* font-style: italic; */
+            /* text-align:center; */
+        }
+
+        h2 {
+            /* color:lightcyan; */
+            font-size: 24px;
+            text-align: left;
+        }
+
+        h3 {
+            color: black;
+            font-size: 18px;
+            /* text-decoration: underline; */
+            /* font-style: italic; */
+            text-align: left;
+        }
+
+        h4 {
+            color: black;
+            font-size: 22px;
+            font-weight: bold;
+            /* text-decoration: underline; */
+            /* font-style: italic; */
+            text-align: center;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100%;
+            background-color: white;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .boxborder {
+            /* background: lightgray; */
+            padding: 10px;
+            border: lightgray 2px solid;
+        }
+
+        .boxmargin {
+            /* background: lightgray; */
+            padding: 2px;
+            border: lightgray 2px solid;
+            margin: 10px 0px 10px 0px;
+        }
+
+footer.footer{
+	background-color:#eee;
+	border-radius: .3rem;
+	text-align: center;
+	padding: 10px 10px;
+}
+
+.fab , .fas.fa-envelope-open-text{
+	color: #272838;
+  	margin: 5px 2px;
+}
+
+.fas .fa-envelope-open-text .fa-2x .fa-linkedin .fa-github{
+    color: #272838;
+  	margin: 5px 2px;
+}
+.fa-globe{
+    margin-right: 0.5rem;
+    color: #eee;
+}
+.fab:hover , .fas.fa-envelope-open-text:hover {
+    opacity: 0.45;
+}
+
+.footer p{
+    color: #272838;
+}
