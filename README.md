@@ -89,6 +89,6 @@ Use MongoDB with Flask templating to create a new HTML page that displays all of
 
 ## Output Screen Shots
 
-![Screen_shot_1.png](Missions_to_Mars/static/images/Screen_shot_1.png)
-![Screen_shot_2.png](Missions_to_Mars/static/images/Screen_shot_2.png)
+![](Missions_to_Mars/static/images/Screen_shot_1.png)
+![](Missions_to_Mars/static/images/Screen_shot_2.png)
 
