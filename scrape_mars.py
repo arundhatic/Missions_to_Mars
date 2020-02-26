@@ -24,9 +24,11 @@ def scrape():
     
     content_title = lists[0].find('div', class_='content_title')
     news_title = content_title.text.strip()
+    #print (news_title)
     
     article_teaser_body = lists[0].find('div', class_='article_teaser_body')
     news_p = article_teaser_body.text.strip()
+    #print(news_p)
     
     # JPL Mars Space Images
     jpl_url = "https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars"
@@ -48,7 +50,17 @@ def scrape():
     # create BeautifulSoup object and parse
     wsoup = bs(html, 'html.parser')
     # get the weather from the newest tweet
-    mars_weather = wsoup.find(class_='tweet-text').get_text()
+    weather_tweet = wsoup.find(class_='tweet-text').get_text()
+    mars_weather = weather_tweet
+    
+    # to remove the extra substring at the end of the tweet text
+    if (weather_tweet.find('pic.twitter.com/UeOmoDjhf3') == -1): 
+        mars_weather = weather_tweet
+    else: 
+        mars_weather = weather_tweet.replace('pic.twitter.com/UeOmoDjhf3', '.'); 
+     
+    #print(mars_weather) 
+    
     
      # Mars Facts
     fact_url = "http://space-facts.com/mars/"
@@ -86,3 +98,12 @@ def scrape():
     mars_data["hemisphere_image_urls"] = hemisphere_image_urls
     
     return mars_data
+
+# for debugging
+#def main():
+    #scrape()
+
+#if __name__ == "__main__":
+    #main()
+
+

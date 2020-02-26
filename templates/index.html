@@ -23,6 +23,7 @@
       </div>
     </div>
     <div class="container-fluid mars-data" id="scraped-data">
+        <br><br>
         <div class="row">
             <div class="col col-12">
                 <h2>Latest Mars News</h2>
@@ -30,12 +31,15 @@
                 {{mars_data.news_p}}
             </div>
         </div>
+         <br><br>
         <div class="row">
-            <div class="col col-8">
+         <br><br>
+            <div class="col col-6">
                 <h2>Featured Mars Image</h2>
                 <img src={{mars_data.featured_image_url}} alt="Featured image">
             </div>
-              <div class="col col-4">
+            <br><br>
+              <div class="col col-6 weather-facts">
                 <div class="boxborder">
                     <h3>Current Weather on Mars</h3>
                     {{mars_data.mars_weather}}

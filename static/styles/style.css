@@ -73,6 +73,10 @@ div.down-arrow.img{
             width: 100%;
         }
 
+div.col.col-6.weather-facts{
+    margin-top: 20px;
+}
+
 .boxborder {
             /* background: lightgray; */
             padding: 10px;
