@@ -51,7 +51,6 @@ def scrape():
     wsoup = bs(html, 'html.parser')
     # get the weather from the newest tweet
     weather_tweet = wsoup.find(class_='tweet-text').get_text()
-    mars_weather = weather_tweet
     
     # to remove the extra substring at the end of the tweet text
     if (weather_tweet.find('pic.twitter.com/UeOmoDjhf3') == -1): 
@@ -102,7 +101,7 @@ def scrape():
 # for debugging
 #def main():
     #scrape()
-
+    
 #if __name__ == "__main__":
     #main()
 
